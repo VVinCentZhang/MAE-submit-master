@@ -1,0 +1,73 @@
+System = RuO2
+  NCORE = 4
+  VOSKOWN = 1
+  ISPIN = 2 
+  ISTART = 0 
+  ICHARG = 11 
+  LWAVE  = .FALSE.      
+  LCHARG = .FALSE.    
+# LWANNIER90 = .TRUE.
+# LWRITE_SPN = .TRUE.  #Serial only
+  NBANDS = 128 
+  ENCUT = 520
+  PREC   =  Accurate 
+  MAGMOM  = 12*0 0 0 2 0 0 -2
+# RWIGS  =  1.790 1.805 0.930 
+  LSORBIT  = .TRUE.
+# SAXIS    = 0 0 1
+  GGA_COMPAT    = .FALSE.
+  LNONCOLLINEAR = .TRUE.
+
+  LMAXMIX  = 4
+  AMIX     = 0.02  metal : 0.02; semiconductor : 0.2
+  BMIX     = 0.00001
+  AMIX_MAG = 0.8
+  BMIX_MAG = 0.00001
+
+# IALGO = 48     
+# LDIAG = .TRUE.  
+# LREAL = Auto  
+  ALGO = N
+  ISMEAR = -5  
+
+  NEDOS  =     1201    number of gridpoints for DOS
+  EMIN   =    -20.0    min energy [eV] for DOS calc
+  EMAX   =     20.0    max energy [eV] for DOS calc
+
+  NSW    =  0  
+  IBRION =  -1  
+  ISIF   =  0   
+
+# ENMAX = 550  
+  EDIFF = 1e-8 
+  EDIFFG = -0.01 
+  POTIM = 0.05
+
+# LVDW = .TRUE.
+# IVDW = 4
+# VDW_RADIUS = 50.0
+# VDW_S6 = 13.96
+# VDW_SR = 1.32
+  
+# IVDW = 12
+# VDW_RADIUS = 50.0
+# VDW_S6 = 0.75
+# VDW_SR = 1.00
+# VDW_SCALING = 0.75
+# VDW_D = 20.0
+# VDW_C6 = 24.6700 12.6400
+# VDW_R0 = 1.6390 1.7710
+# LVDW_EWALD = .TRUE.
+
+# LDAU = .TRUE.
+# LDAUTYPE = 2
+# LDAUL = -1  2 
+# LDAUU =  0  2.0
+# LDAUJ =  0  0.0
+# LDAUPRINT = 2
+
+  ISYM   =  -1    
+  SYMPREC = 1e-8 
+  LPETIM =  F 
+  SIGMA  = 0.2 
+  LORBIT = 11
