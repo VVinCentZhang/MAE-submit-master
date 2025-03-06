@@ -1,4 +1,4 @@
-# run.sh
+# MAE-submit-master
 ## 使用VASP计算MAE时批量提交任务的脚本。
 ***
 1. **需要先准备好INPUT.in文件，并使用**```vaspkit -task 621```**生成相应文件夹** (详细教程见[vaspkit](https://mp.weixin.qq.com/s/IWjShP26k90q-2GJ429vYA))
@@ -20,5 +20,5 @@ m_y= \mathrm{sin}(\phi_i)\times \mathrm{sin}(\theta_j)\
 m_z= \mathrm{cos}(\phi_i)
 \end{cases}
 ```
-2. 使用 ``` chmod + x run.sh ```添加执行权限
-3. ``` ./ run.sh ```运行脚本
+2. **使用** ``` chmod + x run.sh ```**添加执行权限**
+3. ``` ./ run.sh ```**运行脚本**
