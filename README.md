@@ -3,8 +3,8 @@
 ***
 1. **需要先准备好INPUT.in文件，并使用**```vaspkit -task 621```**生成相应文件夹** (详细教程见[vaspkit](https://mp.weixin.qq.com/s/IWjShP26k90q-2GJ429vYA))
     - 创建MAE文件夹，准备好**INCAR**，KPOINTS，CHGCAR，POSCAR，POTCAR和**提交任务的脚本(本服务器为run.slurm，需根据自己的服务器修改)**，除**加粗**的两个文件外，其余文件建议使用软链接 \
-      关于INPUT.in文件：
-      ```
+      关于**INPUT.in**文件：
+      ```shell
       1                    ! 1为预处理, 2为后处理 
       0 360 12             ! Phi, Spherical coordinate system 
       0 180 12             ! 0<= theta <=180, 90 degree means in x-y plane
